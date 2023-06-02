@@ -1,0 +1,4 @@
+Aqui estuve Probando conocimientos antes de ver Flex, y obviamente antes de Grid
+Utilice algunas transiciones y en los articulos estuve pasando en limpio la tecnica
+rudimentaria de colocar 2 articulos uno al lado del otro sin Flex, osea pues
+un Aside

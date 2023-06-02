@@ -1,0 +1,201 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: lightsteelblue;
+}
+
+header{
+    background-color: darkslategrey;
+    color: white;
+    padding: 24px;
+}
+
+h1{
+    margin: 0px;
+    font-size: 64px;
+    display: inline;
+    text-shadow: 1px 2px black;
+}
+
+h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: darkgrey;
+    margin: 0px 0px 15px 0px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    text-shadow: 1px 1px black;
+}
+
+header nav ul{
+    font-size: 20px;
+    margin: 0px;
+    list-style: armenian;
+    padding: 0px;
+}
+
+header nav ul li{
+    margin-bottom: 2px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header nav{
+    display: inline;
+    float: right;
+    margin-right: 15px;
+}
+
+img, video{
+    height: 350px;
+}
+
+.secciones{
+    display: inline-block;
+    width: 623px;
+    text-align: justify;
+    margin: 24px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+h3{
+    text-align: center;
+}
+
+aside section{
+    width: 480px;
+    margin: 24px;
+    text-align: justify;
+    background-color: white;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+#aside2{
+    display: inline-block;
+}
+
+#aside1{
+    display: inline-block;
+    position: absolute;
+}
+
+aside h4{
+    text-align: center;
+}
+
+aside img{
+    height: 300px;
+}
+
+footer{
+    background-color: darkslategrey;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border-top: 2px solid black;
+}
+
+footer p{
+    margin: 0px;
+    float: right;
+}
+
+footer a{
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+footer a:link, header a:link{
+    color: white;
+}
+
+footer a:visited, header a:visited{
+    color: white;
+}
+
+footer a:hover, header a:hover{
+    color: orange;
+}
+
+footer a:active, header a:active{
+    color: red;
+}
+
+.secciones:hover{
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+
+aside section:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+h2:hover{
+    background-color: white;
+    color: aqua;
+}
+
+h5{
+background: white;
+color: red;
+text-align: center;
+font-size: 24px;
+border-radius: 50px;
+width: 200px;
+margin: 0px auto;
+margin-bottom: 24px;
+}
+
+h5:hover{
+    background-color: black;
+    color: blueviolet;
+    cursor: crosshair;
+}
+
+.Encuesta p{
+    text-align: justify;
+    font-size: 14px;
+    background-color: white;
+    width: 650px;
+    margin: 70px auto 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Encuesta{
+    min-height: 627px;
+}
+
+.Encuesta .pEncuesta, .Encuesta label, .Encuesta input{
+    padding: 10px 10px 10px 0px;
+    margin: 10px auto;
+}
+
+.Encuesta form{
+    background-color: white;
+    border-radius: 10px;
+    width: 650px;
+    padding: 10px;
+    margin: auto auto;
+}
+
+.Encuesta input, .Encuesta label{
+    width: 625px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.Encuesta label:hover, .Encuesta #input{
+    cursor: pointer;
+}
+
+

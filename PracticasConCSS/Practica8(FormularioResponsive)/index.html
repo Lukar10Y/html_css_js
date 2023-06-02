@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="flex row">
+        <h1>Valorant</h1>
+        <nav id="NavOriginal">
+            <ul>
+                <li class="inline NavLi"><a href="https://youtube.com" target="_blank">Youtube</a></li>
+                <li class="inline NavLi"><a href="https://playvalorant.com/">Valorant</a></li>
+            </ul>
+        </nav>
+        <div class="DisplayNone Div" id="MenuResponsiveContainer">
+            <div id="DivTamano">
+            <img class="DisplayNone ImagenNav" src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png">
+            <nav id="MenuResponsive">
+                <ul>
+                    <li class="inline NavLi"><a href="https://youtube.com" target="_blank">Youtube</a></li>
+                    <li class="inline NavLi"><a href="https://playvalorant.com/">Valorant</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <section class="flex column">
+        <h2>Ingresar</h2>
+        <form class="form flex column">
+            <label for="User">Usuario</label>
+            <input type="text" id="User" placeholder="Usuario">
+            <label for="Clave">Contrasena</label>
+            <input type="password" id="Clave" placeholder="Contrasena">
+            <input class="input" type="submit">
+        </form>
+    </section>
+    <footer>
+        <p>Derechos Reservados 2022</p>
+    </footer>
+</body>
+</html>

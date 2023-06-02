@@ -1,0 +1,350 @@
+*{
+    font-family: 'Martian Mono', monospace;
+    margin: 0;
+    font-size: 14px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px rgb(0,0,0) solid;
+    padding: 0.5em;
+    position: sticky;
+    top: 0;
+    background-color: var(--ColorFondo);
+    height: 5vh;
+    color: var(--ColorHeaderFooter);
+    z-index: 1000;
+}
+
+footer{
+    padding: 0.25em;
+    border-top: 2px solid rgb(0,0,0);
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--ColorFondo);
+    height: 2vh;
+    color: var(--ColorHeaderFooter);
+}
+
+:root{
+    --ColorFondo:rgb(250,150,60);
+    --ColorFondoSecundario:rgb(240,220,190);
+    --ColorLinkPedido:rgb(250,80,30);
+    --ColorHeaderFooter:rgb(0,0,0);
+}
+
+h1{
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+    margin: 0 1em;
+}
+
+a{
+    color: var(--ColorHeaderFooter);
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style-position: outside;
+}
+
+nav ul li{
+    margin: 0 2em;
+}
+
+#LiIniciarSeccion{
+    list-style-type: none;
+    border: 2px solid rgb(0,0,0);
+    border-radius: 20%;
+    padding: 0.5em;
+    background-color: rgb(255,255,255);
+    text-align: center;
+}
+
+.Menu{
+    display: grid;
+    grid-template-columns: minmax(10em, 1fr) 8fr;
+    grid-template-rows: 1fr;
+    gap: 2em 1em;
+    margin: 2em;
+}
+
+.MenuContainer{
+    border-bottom: 2px solid rgb(0,0,0);
+}
+
+.MenuContainer.Last-Child{
+    border: none;
+}
+
+.SeccionMenu{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    gap: 1.5em;
+    background-image: url(https://www.pngmart.com/files/16/Chef-Vector-PNG-Clipart.png);
+    background-repeat: no-repeat;
+    background-size: 7em;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-color: rgb(255,255,255);
+}
+
+.MenuItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(0,0,0);
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+}
+
+.SeccionMenu img{
+    width: 100%;
+    object-fit: cover;
+    height: 15em;
+}
+
+.Menu h3{ 
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.NombreSeccionMenu{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/55/55335.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: right;
+    background-size: 12em;
+    background-origin: border-box;
+    border: 2px solid rgb(0,0,0);
+    border-radius: 5%;
+    padding: 1em;
+}
+
+.Menu p{
+    text-align: justify;
+    margin: 1em;
+}
+
+.LinkPedido{
+    margin: 0.5em;
+    font-size: 1.1em;
+    color: var(--ColorLinkPedido);
+}
+
+#h2Menu{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+    letter-spacing: 0.1em;
+    background: radial-gradient(circle, rgb(255,255,255), var(--ColorFondo));
+}
+
+#ScrollMenu{
+    height: calc(5vh + 14px);
+}
+
+.ApartadoInicial{
+    background-image: url(https://images.hdqwalls.com/download/synthwave-sun-mountains-4k-op-1366x768.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid rgb(0,0,0);
+    box-shadow: 0 1em 1em rgb(80,20,80);
+    display: flex;
+    flex-direction: column;
+    height: calc(95vh - 16px);
+    animation: Saturado;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.Banner{
+    color: rgb(80,20,80);
+    background: radial-gradient(circle, rgb(255,255,255), rgb(80,20,80), rgb(80,20,80));
+    font-size: 1.75em;
+    padding: 0.25em;
+    text-align: center;
+    width: calc(100% - 0.5em);
+    margin-top: 1em;
+}
+
+.Opciones:hover{
+    animation-name: TamanoLinks;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.MenuItem:hover{
+    animation-name: Sombra;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.LinkPedido:hover{
+    animation-name: ColorLinkPedido;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.ContainerMenuResponsive nav{
+    background-color: var(--ColorFondoSecundario);
+    padding: 2em;
+    border: 2px solid rgb(0,0,0);
+    position: absolute;
+    height: calc(88vh - 10px - 3em);
+    display: none;
+    top: calc(5vh + 15px);
+    right: -60vw;
+    width: 40vw;
+}
+
+.ContainerMenuResponsive{
+    display: none;
+}
+
+#Bars{
+    font-size: 2em;
+}
+
+#ContainerNosotros{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2em;
+    background-color: var(--ColorFondoSecundario);
+}
+
+.Nosotros{
+    height: 20vh;
+    filter: grayscale(0.5);
+    margin: 1em;
+}
+
+.Nosotros:hover{
+    filter: grayscale(0);
+}
+
+@media  only screen and (max-width:950px) {
+    .Nav{
+        display: none;
+    }
+
+    .ContainerMenuResponsive{
+        display: block;
+    }
+
+    .ContainerMenuResponsive:hover{
+        cursor: pointer;
+    }
+
+    .ContainerMenuResponsive:hover > .ResponsiveNav{
+        display: block;
+        animation-name: ResponsiveNav;
+        animation-duration: 1.25s;
+        animation-fill-mode: both;
+    }
+    
+    .ResponsiveNav ul{
+        list-style-position: outside;
+        display: block;
+    }
+    
+    .ResponsiveNav li{
+        margin: 1.5em 0;
+    }
+    
+    .ResponsiveNav .Opciones:hover{
+        animation: none;
+    }
+
+    h1{
+        font-size: 1.4em;
+    }
+
+    .Menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 8fr;
+        gap: 2em 1em;
+        margin: 2em;
+    }
+
+    .NombreSeccionMenu{
+        background-size: 4em;
+    }
+
+    .LinkPedido:hover{
+        animation: none;
+    }
+
+    .Banner{
+        background: radial-gradient(circle, rgb(255,255,255), rgb(80,20,80));
+    }
+
+    .SeccionMenu{
+        background-image: none;
+    }
+}
+
+@keyframes TamanoLinks{
+    0%{ font-size: 1em;
+    }
+    100%{
+        font-size: 1.2em;
+    }
+}
+
+@keyframes Sombra{
+    0%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 0 0 1em rgb(40,40,40);
+    }
+}
+
+@keyframes ColorLinkPedido{
+    0%{
+        color: var(--ColorLinkPedido);
+    }
+    100%{
+        color: rgb(80,20,80)
+    }
+}
+
+@keyframes ResponsiveNav{
+    0%{
+        right: -60vw;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes Saturado{
+    0%{
+        filter: saturate(0.35);
+    }
+    100%{
+        filter: saturate(1.25);
+    }
+}

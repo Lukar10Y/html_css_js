@@ -1,0 +1,33 @@
+#NombrePrincipal {
+    color: white;
+    border-width: 2px;
+    border-radius: 20px 20px;
+    border-color: red;
+    border-style: solid;
+    background-color: red;
+    max-width:fit-content;
+    font-size: 40px;
+}
+
+.SubMenu {
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    font-size: 25px;
+    font-style: italic;
+}
+
+h3{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    max-width: fit-content;
+}
+
+#video{
+    position: relative;
+    left: 250px;
+}
+
+p{
+    font-size: 18px;
+}

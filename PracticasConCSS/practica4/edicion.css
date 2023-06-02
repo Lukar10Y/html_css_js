@@ -1,0 +1,106 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1{
+    font-size: 64px;
+    background-color: darkslateblue;
+    border: 4px solid black;
+    padding: 4px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    text-shadow: 2px 1px black;
+}
+
+nav{
+    font-size: 18px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+h2{
+    font-size: 32px;
+    color: darkslateblue;
+    margin: 40px;
+}
+
+section img, section video{
+    height: 400px;
+}
+
+section, section article{
+    display: inline;
+}
+
+body p{
+    text-align: justify;
+    width: 712px;
+}
+
+aside{
+    text-align: center;
+    display: inline-block;
+}
+
+aside p{
+    width: 420px;
+}
+
+aside img{
+    height: 250px;
+}
+
+form li, #submit{
+    margin: 25px;
+}
+
+footer p{
+    font-size: small;
+}
+
+#Tabla1 td, #Tabla1 th, #Tabla1 table{
+    border: 1px solid black;
+    padding: 2px;
+}
+
+#Tabla1 th{
+    background-color: blueviolet;
+    color: white;
+}
+
+#Tabla1 td:hover{
+    color: fuchsia;
+    background-color: black;
+}
+
+#Tabla2 td, #Tabla2 th, #Tabla2 table{
+    border: 3px solid orange;
+    padding: 2px;
+    border-collapse: collapse;
+}
+
+#Tabla1, #Tabla2{
+    margin: 12px 24px;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: darkslateblue;
+}
+
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color: darkorange;
+}

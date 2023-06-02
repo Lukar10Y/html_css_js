@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background-color:  thistle;
+}
+
+p{
+    text-align: justify;
+    margin: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+a:link{
+    color: white;
+}
+
+.linksuperior:hover{
+    color: fuchsia;
+    font-size: 1.5em;
+    transition: all 0.75s;
+}
+
+a:hover{
+    color: fuchsia;
+    transition: all 0.75s;
+}
+
+a:active{
+    color: orange;
+    transition: none;
+}
+
+header{
+    background-color: darkcyan;
+    color: white;
+    padding: 0.3em;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 1em black;
+    border-bottom: 1px solid black;
+    z-index: 1000;
+    min-width: 52em;
+}
+
+h1{
+    font-size: 4em;
+    text-shadow: 0 0 0.1em black;
+    display: inline;
+    margin: 0.2em;
+}
+
+nav{
+    display: inline;
+    float: right;
+    margin: 1.5em auto;
+}
+
+nav a{
+    margin: auto 0.75em;
+    font-size: 1.25em;
+}
+
+h2{
+    padding: 0.1em;
+    background-color: darkcyan;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 0.05em black;
+}
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0.5em auto ;
+    padding: 0.5em;
+    background-color: white;
+}
+
+footer{
+    background-color: darkcyan;
+    position: sticky;
+    bottom: 0;
+    color: white;
+    padding: 0.2em;
+    z-index: 999;
+}
+
+footer p{
+    float: right;
+}
+
+footer p, footer a{
+    margin: auto 0.5em;
+}
+
+h3:hover{
+    text-shadow: 0 0 0.025em black;
+    color: purple;
+    transition: all 1s;
+    border-bottom: 2px solid blueviolet;
+    border-top: 2px solid blueviolet;
+    font-size: 1.75em;
+}
+
+#galeria img{
+    height: 20em;
+    position: absolute;
+    border: 2px solid white;
+    box-shadow: 0 0 0.5em black;
+}
+
+#galeria{
+    margin: 0.5em auto;
+    height: 32em;
+    position: relative;
+}
+
+#img2{
+    left: 5%;
+}
+
+#img1:hover, #img2:hover, #img3:hover{
+    z-index: 3;
+    height: 22em;
+    transition: 2s;
+}
+
+#img1{
+    left: 30%;
+    top: 30%;
+    z-index: 1;
+}
+
+#img3{
+    left: 65%;
+    z-index: 2;
+}
+
+h4{
+    text-align: center;
+    font-size: 1.25em;
+    margin: 0.75em;
+}
+
+.articulos{
+    margin: 1em auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2em;
+    padding: 1em;
+    transition: box-shadow 2s, border-color 1s;
+}
+
+.articulos:hover, .Object:hover{
+    box-shadow: 0px 0px 0.75em black;
+    border-color: blueviolet;
+    border-width: 2px;
+}
+
+.articulos img{
+    height: 12em;
+}
+
+.Type1{
+    height: 20em;
+    width: 30em;
+}
+
+.Type1 img{
+    float: right;
+    margin: 0.5em;
+    border: 1px solid black;
+}
+
+.Type2{
+    height: 28em;
+    width: 28em;
+}
+
+.Type2 img{
+    display: block;
+    margin: 2em auto;
+}
+
+.inline{
+    display: inline-block;
+    margin: 1em;
+}
+
+div{
+    height: 32em;
+    margin: 2em;
+}
+
+#aside{
+    position: absolute;
+}
+
+.Object{
+    height: 18em;
+    width: 15em;
+    margin: 1em auto;
+    display: block;
+    border: 2px solid white;
+    transition: box-shadow 2s, border-color 1s;
+}
+
+.contain{
+    object-fit: contain;
+}
+
+.fill{
+    object-fit: fill;
+}
+
+.cover{
+    object-fit: cover;
+}
+
+.scale{
+    object-fit: scale-down;
+}
+
+.flex{
+    display: flex;
+    border: 4px solid pink;
+    flex-wrap: wrap;
+}
+
+#flex1{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.flex article, .flex aside{
+    border: 4px purple solid;
+    background-color: white;
+    width: 45%;
+    margin: auto;
+    min-width: 500px;
+}
+
+.imgflex{
+    height: 25em;
+    width: 25em;
+    object-fit: cover;
+    border: 4px dashed blueviolet;
+    margin: 1em;
+}
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina web Super Interesante</title>
+    <link rel="stylesheet" href="edicion.css">
+</head>
+<body>
+    <header>
+        <h1><span id="Arriba">Fran Network</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Opcion 1</a></li>
+                <li><a href="form.html">Opcion 2</a></li>
+                <li><a href="Tablas.html">Opcion 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Form</h2>
+    <section>
+        <h3>Encuentas/Forms que no le interesan a nadie, pero aun asi me sirven para practicar</h3>
+        <form action="/formulario" method="get">
+            <ol>
+                <li>
+                    <label for="1eraPregunta">Nombre</label>
+                    <input name="Nombre" id="1eraPregunta" type="text" placeholder="Responder aqui" required>
+                </li>
+                <li>
+                    <label for="2eraPregunta">Apellido</label>
+                    <input name="Apellido" id="2eraPregunta" type="text" placeholder="Responder aqui">
+                </li>
+                <li>
+                    <label for="3eraPregunta">Te gusto el video? En caso Afirmativo confirma aqui</label>
+                    <input name="Gusto" id="3eraPregunta" type="checkbox">
+                </li>
+                <li>
+                    <label for="4eraPregunta">Escoge un numero de entre el 0 y el 10 (No sirve de nada pero igual)</label>
+                    <input name="Numero" id="4eraPregunta" type="range" min="0" max="10">
+                </li>
+                <li>
+                    <label for="5eraPregunta">Te gusta la pagina?</label>
+                    <textarea cols="60" rows="10" name="Opinion" id="5eraPregunta" type="text"  placeholder="Responder aqui" ></textarea>
+                </li>
+            </ol>
+            <input id="submit" type="submit">
+        </form>
+    </section>
+    <footer>
+        <a target="_blank" href="https://youtube.com" >Youtube</a>
+        <a href="#Arriba">Volver Arriba</a>
+        <p>Digamos que tiene Copyrigth 2022</p>
+    </footer>
+</body>
+</html>

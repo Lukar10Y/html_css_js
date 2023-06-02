@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255,255,255);
+}
+
+body{
+    background-color: rgb(40,40,50);
+}
+
+article img{
+    width: 24em;
+    margin: 1em auto;
+    display: block;
+    border: 4px solid rgb(120,120,130);
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0.5em;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 1.75em;
+    text-align: center;
+}
+
+article{
+    background-color: rgb(80,80,90);
+    margin: 1em 0.5em;
+    border: 2px solid rgb(60,60,70);
+    padding: 1em;
+    display: inline-block;
+    width: 44vw;
+}
+
+header, footer{
+    background-color: rgb(0,0,40);
+    padding: 0.25em;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+}
+
+footer p{
+    display: inline;
+    float: right;
+    font-size: 0.75em;
+}
+
+h1, nav{
+    display: inline-block;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 0.5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    float: right;
+    margin: 1.75em
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MenuResponsive, .OpcionesResponsive{
+    display: none;
+}
+
+#MenuResponsive{
+    margin: 0em;
+}
+
+#icono{
+    float: right;
+    height: 60px;
+    width: 90px;
+    object-fit: cover;
+    display: none;
+    border: 2px solid rgb(20,20,100);
+    border-radius: 25px;
+}
+
+.inline{
+    display: none;
+}
+
+#Nav{
+    display: inline;
+    float: right;
+}
+
+@media only screen and (max-width: 915px) {
+    h1{
+        font-size: 1.75em;
+    }
+    h2{
+        font-size: 1.25em;
+    }
+    
+    h3{
+        font-size: 1em;
+        text-align: center;
+    }
+    #icono{
+        width: 60px;
+        height: 30px;
+    }
+    p{
+        font-size: 0.75em;
+    }
+    article img{
+        width: 15em;;
+    }
+    article{
+        padding: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav{
+        display: none;
+    }
+    #MenuResponsive, #icono{
+        display: block;
+    }
+    #icono:hover{
+        border: 5px orange solid;
+    }
+    .inline{
+        display: inline;
+        margin: 0 0.25em 0 0;
+        float: right;
+    }
+    #MenuResponsive:hover > .OpcionesResponsive{
+        display: inline;
+    }
+    .OpcionesResponsive{
+        position: absolute;
+        right: 1%;
+        bottom: -90%;
+        border: 2px rgb(200,80,0) solid;
+        background-color: rgb(0,0,40);
+        height: 6em;
+    }
+    .OpcionesResponsive li{
+        display: block;
+    }
+    .column{
+        flex-direction: column;
+    }
+    article{
+        display: block;
+        width: 80vw;
+    }
+}
+
